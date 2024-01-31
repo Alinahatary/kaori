@@ -132,8 +132,8 @@ a{
         width: 95%;
     }
     .search{
-        width: 50%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5px;
         margin-top: 2%;
     }
 }
@@ -143,6 +143,10 @@ a{
         margin-left: 5%;
         margin-top: 2%;
         margin-bottom: 2%;
+    }
+    .katalog a{
+        font-size: 0.8em;
+        padding: 0.2em 0.4em;
     }
 }
 
