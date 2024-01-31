@@ -478,6 +478,16 @@ img {
     padding-bottom: 2em;
     padding-right: 5em;
   }
+  @media(max-width:800px){
+    .footer_lists{
+        font-size: 12px;
+            }
+    .list_item {
+        padding-left: 2em;
+        padding-bottom: 1em;
+        padding-right: 2em;
+        }
+}
 
 .bolder{
     font-weight: 600;
