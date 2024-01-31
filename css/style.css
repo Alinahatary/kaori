@@ -37,6 +37,8 @@ ul{
 .nav li{
    margin-left: 5px;
    margin-right: 5px;
+   user-select: none;
+   -ms-user-select: none;
 }
 
 .search {
@@ -47,6 +49,7 @@ ul{
     box-shadow: 0 -1px 0 rgba(252, 250, 250, 0.5);
     border-radius: 5px;
 }
+
 .search_but {
     width: 5%;
     padding: 15px;
@@ -58,6 +61,8 @@ ul{
 
 .menu{
     margin-left: 30px;
+    user-select: none;
+    -ms-user-select: none;
 }
 
 .katalog{
@@ -122,6 +127,24 @@ a{
     width: 850px;
     text-align: justify;
 }
+@media(max-width:1000px){
+    .start{  
+        width: 95%;
+    }
+    .search{
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+}
+@media(max-width:700px){
+    .search{
+        width: 95%;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
 
 .menu{
     background-size: 100% 100%;
@@ -130,6 +153,12 @@ a{
     margin-top: 40px;
     margin-bottom: 0;
 }
+@media(max-width:1000px){
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+            }
+        }
 
 /*SLIDER begin*/
 .slider0{
@@ -138,6 +167,7 @@ a{
     background-size: 100% 100%; 
     padding-top: 10px;
     height: 530px;
+    width: 100%;
 }
 
 .slider0 > h2 {
@@ -150,13 +180,18 @@ a{
 }
 
 img {
-    width: 60%;  /*!important;*/
+    width: 50%;  /*!important;*/
   }
+  @media(max-width:1000px){
+    .slider{
+        width: 90%;
+    }
+}
   
   /* General styles */
   .slider {
-    max-width: 1000px;
-    min-width: 320px;
+    max-width: 1200px;
+    min-width: 300px;
     margin: 20px auto;
     padding: 30px 50px;
     padding-top: 3px;
@@ -223,9 +258,7 @@ img {
     bottom: 0;
     z-index: 3;
     text-align: center;
-    padding-top: 373px;
-    
-    
+    padding-top: 373px;  
   }
   
   .sim-dot {
@@ -343,6 +376,8 @@ img {
     align-items: center;
     height: 133px;
     padding: 20px;
+    user-select: none;
+    -ms-user-select: none;
 }
 .rating{
     justify-content: space-between;
@@ -406,14 +441,13 @@ img {
     margin-bottom: 20px;
     padding-top: 40px;
     padding-left: 10px;
-    
 }
 
 .footer_wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: auto;
 }
 .footer_contact img{
     height: 50px;
@@ -464,6 +498,5 @@ img {
     .wrap{
         flex-direction: column;
         align-items: flex-start;
-    }
-   
+    }  
 }
