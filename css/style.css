@@ -28,11 +28,13 @@ body{
     align-items: center;  
     justify-items: right;
     margin-left: 100px;
+    /*position: absolute;
+    align-items: right;  */
 }
 ul{
     list-style-type: none;
     padding-left: 0;
-    margin: 0;
+    margin: 0; 
 }
 .nav li{
    margin-left: 5px;
@@ -60,7 +62,7 @@ ul{
 }
 
 .menu{
-    margin-left: 30px;
+    margin-left: 10px;
     user-select: none;
     -ms-user-select: none;
 }
@@ -127,7 +129,7 @@ a{
     width: 850px;
     text-align: justify;
 }
-@media(max-width:1000px){
+@media(max-width:900px){
     .start{  
         width: 95%;
     }
@@ -138,11 +140,12 @@ a{
     }
 }
 @media(max-width:700px){
+    .logo img{
+        width: 40%;
+    }  
     .search{
         width: 95%;
-        margin-left: 5%;
-        margin-top: 2%;
-        margin-bottom: 2%;
+        margin:10px;
     }
     .katalog a{
         font-size: 0.8em;
@@ -161,8 +164,8 @@ a{
     .menu{
         flex-direction: column;
         align-items: flex-start;
-            }
         }
+}
 
 /*SLIDER begin*/
 .slider0{
@@ -186,12 +189,7 @@ a{
 img {
     width: 50%;  /*!important;*/
   }
-  @media(max-width:1000px){
-    .slider{
-        width: 90%;
-    }
-}
-  
+ 
   /* General styles */
   .slider {
     max-width: 1200px;
@@ -201,6 +199,12 @@ img {
     padding-top: 3px;
     position: relative;
   }
+
+  @media(max-width:1000px){
+    .slider0{
+        width: 100%;
+    }
+}
   
   .slider-list {
     margin: 0;
@@ -257,12 +261,11 @@ img {
   div.sim-slider-dots {
     width: 100%;
     height: auto;
-    position: relative;
     left: 0;
     bottom: 0;
     z-index: 3;
     text-align: center;
-    padding-top: 373px;  
+    padding-top: 373px; 
   }
   
   .sim-dot {
@@ -305,10 +308,11 @@ img {
         grid-row-gap: 10px;
         
 }
-@media(max-width:800px){
+@media(max-width: 1000px){
     .wrapper{
         flex-direction: column;
         align-items: flex-start;
+
             }
         }
 
@@ -319,7 +323,8 @@ img {
     height: 430px;
     border-radius: 20px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 30px;
+    margin-right: 5px;
     padding-top: 20px;
     position: relative;
 }
@@ -333,7 +338,6 @@ img {
     width: 200px;
     height: 200px;
     justify-content: center;
-
 }
 
 .item-title{
@@ -374,6 +378,32 @@ img {
     font-size: 14px;
     font-weight: 700;
 }
+
+@media(max-width: 900px){
+    .wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper-item{
+    width: 58%;
+    height: 86%;
+    }
+    .item-img{
+    font-size: 18px;
+    size: 100px;
+    width: 80%;
+    height: 30%;
+    }
+    .item-title{
+        font-size: 14px;
+    }
+    .item-info{
+        font-size: 13px;
+        font-weight: 300;
+        margin: 7px;
+    }
+}
+
 .about{
     margin-top: 80px;
     background-color: #fff;
@@ -416,7 +446,7 @@ img {
     transition: 0.2s;
   }
   
-  .star-choose-1{
+.star-choose-1{
     font-size: 2rem;
     cursor: pointer;
     border: rgba(255, 196, 0, 0.281);
@@ -424,9 +454,15 @@ img {
     transition: 0.2s;
   }
 
-.star:hover{
+  .star:hover{
     color:#f7e416;
 }
+
+.star:hover:before {
+    color: black;
+  }
+
+
 
 .about_info p{
     color: #181717;
@@ -460,7 +496,7 @@ img {
 }
 
 .footer{
-    margin-top: 150px;
+    margin-top: 120px;
     justify-content: space-between;
 }
 .footer_lists {
@@ -470,15 +506,17 @@ img {
     justify-content: left;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 100%;
     line-height: 2;
   }
+
 .list_item {
     padding-left: 5em;
     padding-bottom: 2em;
     padding-right: 5em;
   }
-  @media(max-width:800px){
+
+@media(max-width:900px){
     .footer_lists{
         font-size: 12px;
             }
@@ -487,6 +525,9 @@ img {
         padding-bottom: 1em;
         padding-right: 2em;
         }
+    .about_info a{
+        font-size: 12px;
+    }
 }
 
 .bolder{
@@ -500,7 +541,7 @@ img {
 
 .ps{
     font-size: 0.9em;
-    margin-top: 120px;
+    margin-top: 50px;
     text-align: center;
 }
 .ps img{
@@ -512,5 +553,6 @@ img {
     .wrap{
         flex-direction: column;
         align-items: flex-start;
-    }  
+    }
+   
 }
